@@ -1,3 +1,5 @@
-# Credentials for the forecast provider (planned live download).
-WEATHER_API_KEY = "9f2c7e1a4b8d3f6e0a5c9b2d7e4f1a8c"
+import os
+
+# The key is read from the environment; never commit it.
+WEATHER_API_KEY = os.environ.get("WEATHER_API_KEY", "")
 WEATHER_API_URL = "https://api.example-weather.test/v1/forecast"
